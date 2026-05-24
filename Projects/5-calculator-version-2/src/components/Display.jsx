@@ -1,0 +1,17 @@
+import React from "react";
+import styles from "./Display.module.css";
+
+const Display = ({ displayValue }) => {
+  return (
+    <div className={styles.display}>
+      <input
+        className={styles.input}
+        type="text"
+        value={displayValue}
+        readOnly
+      />
+    </div>
+  );
+};
+
+export default Display;

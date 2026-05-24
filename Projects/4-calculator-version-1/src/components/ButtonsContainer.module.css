@@ -1,0 +1,45 @@
+.buttonsContainer {
+    width: 340px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.button {
+    padding: 14px 12px;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #ffffff, #fbfdff);
+    /* very light */
+    border: 1px solid rgba(16, 24, 40, 0.04);
+    box-shadow: 0 4px 8px rgba(16, 24, 40, 0.03);
+    transition: transform 0.08s ease, filter 0.08s ease;
+    color: #0f172a;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.button:hover {
+    filter: brightness(0.995);
+}
+
+.operator {
+    background: linear-gradient(180deg, #fbfdff, #f1f5f9);
+    /* very light blue tint */
+}
+
+.clear {
+    background: linear-gradient(180deg, #fff9f9, #fff3f3);
+    /* very light pink */
+    color: #7f1d1d;
+}
+
+.equals {
+    grid-column: span 2;
+    background: linear-gradient(180deg, #34d399, #16a34a);
+    /* green but slightly lighter */
+    color: #fff;
+}

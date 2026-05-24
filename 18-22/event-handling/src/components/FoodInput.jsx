@@ -1,11 +1,7 @@
 import React from "react";
 import styles from "./FoodInput.module.css";
 
-const FoodInput = () => {
-  const handleInputChange = (event) => {
-    console.log("Input value:", event.target.value);
-  };
-
+const FoodInput = ({ handleInputChange }) => {
   return (
     <div className={styles.foodInput}>
       <input

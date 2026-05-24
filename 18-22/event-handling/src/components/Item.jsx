@@ -1,11 +1,7 @@
 import React from "react";
 import styles from "./Item.module.css";
 
-const Item = ({ item }) => {
-  const handleBuyButtonClick = () => {
-    console.log(`Buying ${item}`);
-  };
-
+const Item = ({ item, handleBuyButtonClick }) => {
   return (
     <li className={styles.item}>
       <span className={styles.name}>{item}</span>

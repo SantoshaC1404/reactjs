@@ -12,7 +12,11 @@ function App() {
     <>
       <Container>
         <AppName />
-        <FoodInput />
+        <FoodInput
+          handleInputChange={(event) =>
+            console.log("Input value:", event.target.value)
+          }
+        />
         {foodItems.length === 0 ? (
           <ErrorMessage />
         ) : (

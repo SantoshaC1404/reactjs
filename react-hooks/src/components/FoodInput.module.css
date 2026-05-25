@@ -1,0 +1,10 @@
+.foodInput {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #e6e9ee;
+    border-radius: 8px;
+    background: #f4f7fb;
+    box-shadow: 0 8px 20px rgba(16, 24, 40, 0.08);
+
+}

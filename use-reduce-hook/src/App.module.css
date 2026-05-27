@@ -1,0 +1,96 @@
+﻿.todoContainer {
+    width: 100%;
+    max-width: 900px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95));
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 28px 36px;
+    box-shadow: 0 8px 30px rgba(16, 24, 40, 0.08);
+}
+
+.appName {
+    font-size: 3rem;
+    margin: 0 0 18px 0;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.addRow {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+
+.addRow input[type="text"],
+.addRow input[type="date"] {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    font-size: 16px;
+    min-width: 200px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.addRow input[type="text"] {
+    text-align: center;
+    width: 360px;
+}
+
+.addRow input[type="date"] {
+    text-align: center;
+    width: 180px;
+}
+
+.list {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 180px 110px;
+    gap: 12px;
+    align-items: center;
+    padding: 14px 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.title {
+    text-align: left;
+    font-size: 18px;
+}
+
+.date {
+    text-align: center;
+    color: var(--muted);
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+    .row {
+        grid-template-columns: 1fr 120px 96px;
+    }
+
+    .addRow input[type="text"] {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .addRow input[type="date"] {
+        width: 100%;
+        max-width: 180px;
+    }
+}

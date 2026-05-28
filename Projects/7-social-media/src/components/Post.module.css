@@ -1,0 +1,23 @@
+.card {
+    border: none;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+    width: 100%;
+}
+
+.cardBody {
+    padding: 1.75rem;
+}
+
+.cardTitle {
+    margin: 0 0 0.85rem;
+    font-size: 1.3rem;
+    color: #0f172a;
+}
+
+.cardText {
+    margin: 0 0 1.35rem;
+    color: #475569;
+    line-height: 1.75;
+}

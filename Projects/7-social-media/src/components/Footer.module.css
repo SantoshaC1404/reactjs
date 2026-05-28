@@ -1,0 +1,37 @@
+.footerContainer {
+  background: #ffffff;
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(13, 110, 253, 0.12);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.footerNav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footerLink {
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footerLink:hover {
+  color: #0d6efd;
+}
+
+.footerText {
+  color: #6b7280;
+  margin: 0;
+}

@@ -1,0 +1,48 @@
+.card {
+    position: relative;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+    width: 100%;
+    max-width: 34rem;
+    margin: 0 auto 1rem;
+}
+
+.reactionBadge {
+    position: absolute;
+    top: -0.65rem;
+    right: 1rem;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+.cardBody {
+    padding: 1.5rem;
+}
+
+.cardTitle {
+    margin: 0 0 0.85rem;
+    font-size: 1.3rem;
+    color: #0f172a;
+}
+
+.cardText {
+    margin: 0 0 1.35rem;
+    color: #475569;
+    line-height: 1.75;
+}
+
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    margin: 0;
+}
+
+.reactions {
+    margin-top: 1rem;
+}

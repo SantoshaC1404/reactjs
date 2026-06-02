@@ -1,0 +1,73 @@
+.header {
+  background: linear-gradient(135deg, #0f4cc3 0%, #4f46e5 100%);
+  color: #ffffff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.brandIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #2563eb;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navLink {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.18s ease;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.searchInput {
+  min-width: 200px;
+  border: none;
+  padding: 0.65rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #f8fafc;
+}
+
+.searchInput::placeholder {
+  color: rgba(248, 250, 252, 0.72);
+}
+
+.searchInput:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.16);
+}

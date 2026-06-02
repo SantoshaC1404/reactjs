@@ -1,0 +1,90 @@
+.sidebar {
+  width: 280px;
+  min-height: 100vh;
+  background: #141b2d;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.2rem;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.6rem;
+}
+
+.brandIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: #4f46e5;
+  color: #fff;
+  font-weight: 800;
+}
+
+.sidebarTitle {
+  font-size: 1rem;
+  margin: 0;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.navLink {
+  display: block;
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navLink:hover,
+.navLinkActive {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.profileCard {
+  margin-top: auto;
+  padding: 1.15rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.profileMedia {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.profileAvatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #c7d2fe;
+}
+
+.profileName {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.profileRole {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.88rem;
+}

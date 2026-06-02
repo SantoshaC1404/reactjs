@@ -1,6 +1,10 @@
 import styles from "./Sidebar.module.css";
 
-const Sidebar = () => {
+const Sidebar = ({ selectedTab, setSelectedTab }) => {
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+  };
+
   return (
     <aside className={styles.sidebar}>
       <div className={styles.sidebarHeader}>
@@ -14,28 +18,27 @@ const Sidebar = () => {
       <nav>
         <ul className={styles.navList}>
           <li>
-            <a href="#" className={`${styles.navLink} ${styles.navLinkActive}`}>
+            <a
+              href="#"
+              className={`${styles.navLink} ${selectedTab === "Home" ? styles.navLinkActive : ""}`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleTabClick("Home");
+              }}
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#" className={styles.navLink}>
+            <a
+              href="#"
+              className={`${styles.navLink} ${selectedTab === "Create Post" ? styles.navLinkActive : ""}`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleTabClick("Create Post");
+              }}
+            >
               Create Post
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.navLink}>
-              Messages
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.navLink}>
-              Friends
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.navLink}>
-              Settings
             </a>
           </li>
         </ul>
